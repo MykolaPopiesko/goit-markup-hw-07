@@ -1,0 +1,85 @@
+/*наша команда*/
+
+.group {
+  background-color: #f5f4fa;
+}
+.group__title {
+  @extend %bacetitle;
+}
+.group__list {
+  display: flex;
+}
+
+.group__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.group__sign {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: $background-main-color;
+}
+
+.group__name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $second-color;
+}
+
+.group__position {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.social__link {
+  @extend %sociallinks;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social__icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__link:hover .social__icon {
+  fill: #ffffff;
+}
+
+.social__link:focus .social__icon {
+  fill: #ffffff;
+}
+
+.social__list {
+  @extend %sociallist;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
