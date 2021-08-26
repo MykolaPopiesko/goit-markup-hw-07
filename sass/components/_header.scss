@@ -7,10 +7,6 @@
   border-bottom-color: #ececec;
 }
 
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-}
 /*навигация-ссылки */
 .nav {
   display: flex;
@@ -20,10 +16,10 @@
 .nav__logo {
   @extend %logo;
   margin-right: 93px;
-  color: $second-color;
-}
-.span__logo {
   color: $accent-color;
+}
+.nav__logo-studio {
+  color: $second-color;
 }
 .nav__list {
   display: flex;
@@ -45,7 +41,7 @@
   margin-right: 50px;
 }
 
-.adr__list {
+.adr {
   display: flex;
   align-items: center;
 }

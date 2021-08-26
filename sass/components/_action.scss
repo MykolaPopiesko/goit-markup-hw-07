@@ -1,12 +1,6 @@
 /* чем мы занимаемся-илюстрации*/
 
 .action {
-  padding-top: 0;
-}
-.action__title {
-  @extend %bacetitle;
-}
-.action__list {
   display: flex;
 }
 
@@ -15,8 +9,7 @@
   display: block;
   width: calc((100% / 3)-60px);
 }
-.action__item:not(:last-child),
-.group__item:not(:last-child) {
+.action__item:not(:last-child) {
   margin-right: 30px;
 }
 .action__subject {

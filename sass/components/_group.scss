@@ -1,12 +1,6 @@
 /*наша команда*/
 
 .group {
-  background-color: #f5f4fa;
-}
-.group__title {
-  @extend %bacetitle;
-}
-.group__list {
   display: flex;
 }
 
@@ -15,8 +9,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.group__sign {
+.group__item:not(:last-child) {
+  margin-right: 30px;
+}
+.group__box {
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -37,7 +33,7 @@
   background-color: $background-main-color;
 }
 
-.group__name {
+.group__title {
   text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
@@ -47,7 +43,7 @@
   color: $second-color;
 }
 
-.group__position {
+.group__description {
   text-align: center;
   font-size: 16px;
   line-height: 1.2;
@@ -67,6 +63,9 @@
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social__icon--white {
+  fill: $background-main-color;
+}
 
 .social__link:hover .social__icon {
   fill: #ffffff;
@@ -76,10 +75,13 @@
   fill: #ffffff;
 }
 
-.social__list {
+.social {
   @extend %sociallist;
 }
-
+.social__item--bgcolor {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
 .social__item:not(:last-child) {
   margin-right: 10px;
 }

@@ -1,7 +1,4 @@
 /*постоянные клиенты*/
-.client__title {
-  @extend %bacetitle;
-}
 .client__link {
   display: flex;
   justify-content: center;
@@ -25,7 +22,7 @@
   fill: currentColor;
 }
 
-.client__list {
+.client {
   display: flex;
 }
 

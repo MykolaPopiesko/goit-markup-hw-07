@@ -39,9 +39,30 @@ a {
   margin-right: auto;
 }
 
+.container--inner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.section--paddingtop {
+  padding-top: 0;
+}
+.section--bgcolor {
+  background-color: #f5f4fa;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $second-color;
 }
 
 .visually-hidden {

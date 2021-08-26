@@ -1,10 +1,10 @@
 /* секция-текст */
 
-.content {
-  background-color: $background-main-color;
-}
+//.content {
+// background-color: $background-main-color;
+//}
 
-.content__list {
+.content {
   display: flex;
 }
 .content__item:not(:last-child) {

@@ -28,11 +28,11 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.section__list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.section__item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
